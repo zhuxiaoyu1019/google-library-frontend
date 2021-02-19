@@ -1,0 +1,14 @@
+.form {
+    width: 95%;
+    margin: 20px 0 !important;
+}
+
+.MuiInputBase-root.MuiInput-root.MuiInput-underline {
+    width: 100%;
+}
+
+.search-btn {
+    width: 15%;
+    margin: auto !important;
+    margin-top: 20px !important;
+}
