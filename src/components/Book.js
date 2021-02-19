@@ -58,7 +58,7 @@ export default function Book({
       link,
     };
     API.saveBook(newBook)
-      .then((res) => console.log(res))
+      .then(displaySavedBooks)
       .catch((err) => console.log(err));
   };
 
