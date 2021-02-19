@@ -13,6 +13,7 @@ export default function Saved() {
     API.getBooks()
       .then((res) => {
         setSavedBookList(res.data);
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
