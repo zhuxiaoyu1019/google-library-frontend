@@ -12,8 +12,6 @@ export default function BookList({
   displaySavedBooks,
 }) {
   const location = useLocation();
-  // const bookList =
-  //   location.pathname === "/saved" ? props.savedBookList : props.searchBookList;
   return (
     <div>
       <Paper square className="paper">
@@ -57,17 +55,6 @@ export default function BookList({
                 link={book.volumeInfo.previewLink}
               />
             ))}
-        {/* {bookList.map((book) => (
-          <Book
-            key={book.id}
-            id={book.id}
-            title={book.volumeInfo.title || book.title}
-            authors={book.volumeInfo.authors || book.authors}
-            description={book.volumeInfo.description || book.description}
-            image={book.volumeInfo.imageLinks.thumbnail || book.image}
-            link={book.volumeInfo.previewLink || book.link}
-          />
-        ))} */}
       </Paper>
     </div>
   );
