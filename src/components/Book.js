@@ -58,13 +58,13 @@ export default function Book({
       link,
     };
     API.saveBook(newBook)
-      .then(() => displaySavedBooks())
+      .then(displaySavedBooks)
       .catch((err) => console.log(err));
   };
 
   const handleBookDelete = (id) => {
     API.deleteBook(id)
-      .then(() => displaySavedBooks())
+      .then(displaySavedBooks)
       .catch((err) => console.log(err));
   };
 
