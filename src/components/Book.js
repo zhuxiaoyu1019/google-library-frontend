@@ -115,7 +115,7 @@ export default function Book({
                 component={Link}
                 to="/saved"
                 className={classes.btnGroup}
-                onClick={() => handleBookSave()}
+                onClick={handleBookSave}
               >
                 Save
               </Button>
