@@ -10,7 +10,6 @@ export default function Saved() {
   }, []);
 
   const displaySavedBooks = () => {
-    // setTimeout(function () {
     API.getBooks()
       .then((res) => {
         setSavedBookList(res.data);
@@ -18,7 +17,6 @@ export default function Saved() {
       .catch((err) => {
         console.log(err);
       });
-    // }, 2000);
   };
 
   return (
