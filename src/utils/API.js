@@ -1,6 +1,6 @@
 import axios from "axios";
-// const URL_PREFIX = "http://localhost:8080";
-const URL_PREFIX = "https://google-library-backend.herokuapp.com";
+const URL_PREFIX = "http://localhost:8080";
+// const URL_PREFIX = "https://google-library-backend.herokuapp.com";
 
 const API = {
   searchBooks: (query) => {

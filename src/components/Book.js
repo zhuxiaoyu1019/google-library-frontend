@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import API from "../utils/API";
 import "./style.css";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,6 +49,7 @@ export default function Book({
 }) {
   const classes = useStyles();
   const location = useLocation();
+  const history = useHistory();
 
   const handleBookSave = () => {
     const newBook = {
@@ -58,7 +60,10 @@ export default function Book({
       link,
     };
     API.saveBook(newBook)
-      .then(displaySavedBooks)
+      .then(function () {
+        history.push("/saved");
+        displaySavedBooks();
+      })
       .catch((err) => console.log(err));
   };
 
@@ -112,8 +117,8 @@ export default function Book({
               <Button
                 variant="contained"
                 color="primary"
-                component={Link}
-                to="/saved"
+                // component={Link}
+                // to="/saved"
                 className={classes.btnGroup}
                 onClick={handleBookSave}
               >
