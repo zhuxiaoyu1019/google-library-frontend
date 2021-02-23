@@ -17,11 +17,11 @@ This is a React-based Google Books Search app built with Node, Express and Mongo
 
 ## Deployed Application
 
-[Google Library]()
+[Google Library](https://google-library-frontend.herokuapp.com/)
 
 ## Usage
 
-![Google Library demo]()
+![Google Library demo](./public/google-library.gif)
 
 - This application has 2 pages:
 
