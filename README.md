@@ -31,7 +31,8 @@ This is a React-based Google Books Search app built with Node, Express and Mongo
 
 ## Installation
 
-To install necessary dependencies, run the following command:
+ - The appliaction is supported by [google-library-backend repository](https://github.com/zhuxiaoyu1019/google-library-frontend.git)
+ - To install necessary dependencies, run the following command:
 
       npm i
 
